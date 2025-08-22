@@ -20,14 +20,14 @@ public class LibroService {
     public List<LibroDTO>getAllLibros(){
         List<LibroEntity> libro = repo.findAll();
         return libro.stream()
-                .map(this::convertirADTO)
+                .map(this::convertirAUtorDTO)
                 .collect(Collectors.toList());
     }
 
     //Servicio para obtener datos de un cliente Especifico
 
     public LibroDTO getLibroPorID(Long,id){
-        LibroEntity libros = repo.findById(id).orElseThrow
+        LibroEntity libros = repo.findById(id).orElseThrow,
 
     }
 }
