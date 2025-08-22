@@ -10,4 +10,5 @@ public class Cristian20240365Application {
 		SpringApplication.run(Cristian20240365Application.class, args);
 	}
 
+
 }
